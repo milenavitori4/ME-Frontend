@@ -1,50 +1,101 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-}
-html{
-    margin: 0px;
-}
-
-.principal{
-    width: 1000px;
-    border-radius: 1000px;
-    margin: 0px;
+    background-color: black;
     padding: 0px;
-    box-sizing: border-box;
 }
 
-h1{
-    color:rgb(221, 221, 18);
+
+.logo{
+    color: #4e8d06;
+    font-size: 35px;
+    padding-left: 20px;
+    float: right;
+    padding-top: 10px;
+    height: 70px;
+    
 }
 
-.Grade{
-    display: inline-block;
+.menu{
+    width: 400px;
+    float: right;
+    height: 70px;
 }
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 70px;
+    margin-top: 2px;
+    font-size: 14px;
+    
+}
+
 a{
     text-decoration: none;
-    padding: 5px 5px;
-    grid-template-columns: 1fr 1fr;  
-    display: inline-block;  
-    justify-self: center;
-    gap: 20px 10px;
-    
+    color: #4e8d06;
+    font-weight: bold;
 }
+
+a:hover{
+    color: white;
+}
+
+.procurar{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+    display: flex;
+}
+.psq{
+    width: 200px;
+    height: 15px;
+    background: transparent;
+    border: 1px solid #4e8d06 ;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+} 
+.botão{
+    width:100px;
+    height:37px;
+    background: rgb(92, 206, 92);
+    border: 2px solid black;
+    margin-top:13px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;  
+}
+
+.botão:focus{
+    outline: none;
+}
+
+.psq:focus{
+    outline: none;
+}
+
 
 .grid{
-    max-width: 400px;
-    align-items: center;
+    
+    align-items:center;
     display: flex;
-    width: 50px;
-    top: 0px;
     gap: 10px;
-    border-radius: 1000px;
-    
-    
-
+    margin: 0px;
+    max-width: 400px;
+}
+button{
+    align-items:right;
 }
 
-.img{
-max-width: px;
-}
 
