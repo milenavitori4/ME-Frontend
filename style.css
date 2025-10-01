@@ -2,30 +2,30 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     padding: 0px;
+    line-height: 1.6
 }
 
-
-.logo{
-    color: #4e8d06;
-    font-size: 35px;
-    padding-left: 20px;
-    float: right;
-    padding-top: 10px;
-    height: 70px;
+h1{
+     color: #4e8d06;
+  font-size: 1.8rem;
     
 }
 
 .menu{
-    width: 400px;
-    float: right;
-    height: 70px;
+  background-color: #2a2a2a;
+  box-sizing: border-box;
+  padding: 3rem 20rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  justify-content: space-between;
+  height: 100px;
+  margin: 0;
 }
 
 ul{
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  align-items: center;
 }
 
 ul li{
@@ -47,25 +47,23 @@ a:hover{
 }
 
 .procurar{
-    width: 330px;
-    float: left;
+    width: 400px;
+    float: right;
     margin-left: 270px;
-    display: flex;
+    height: 70px;
+    
+    
 }
 .psq{
-    width: 200px;
-    height: 15px;
-    background: transparent;
-    border: 1px solid #4e8d06 ;
-    margin-top: 13px;
-    color: white;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    display: flex;
+  background-color: #333;
+  border: 1px solid #555;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  width: 250px;
+  font-size: 1rem;
+  display: flex;
+    
 } 
 .botão{
     width:100px;
@@ -77,25 +75,55 @@ a:hover{
     border-bottom-left-radius: 5px;  
 }
 
-.botão:focus{
-    outline: none;
-}
-
 .psq:focus{
-    outline: none;
+     outline: none;
+     border-color: #4e8d06;
 }
-
 
 .grid{
     
     align-items:center;
-    display: flex;
     gap: 10px;
     margin: 0px;
-    max-width: 400px;
-}
-button{
-    align-items:right;
+    max-width: 200px;
+    display: flex;
+
 }
 
+.imagemprincipal{
+    padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.imagem{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.cartão-filme{
+    background-color: #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartão-filme:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cartão-filme img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px 8px 0 0;
+  display: block;
+}
