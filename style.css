@@ -1,129 +1,170 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    padding: 0px;
-    line-height: 1.6
-}
-
-h1{
-     color: #4e8d06;
-  font-size: 1.8rem;
-    
-}
-
-.menu{
-  background-color: #2a2a2a;
-  box-sizing: border-box;
-  padding: 3rem 20rem;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  justify-content: space-between;
-  height: 100px;
+body {
   margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
 }
 
-ul{
+/* ======== TOPO (LOGO + PESQUISA) ======== */
+.topo {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  background-color: #1a1a1a;
+  padding: 15px 20px;
 }
 
-ul li{
-    list-style: none;
-    margin-left: 70px;
-    margin-top: 2px;
-    font-size: 14px;
-    
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e50914; /* vermelho estilo Netflix */
 }
 
-a{
-    text-decoration: none;
-    color: #4e8d06;
-    font-weight: bold;
+.logo span {
+  font-size: 16px;
+  color: #bbb;
+  font-weight: normal;
 }
 
-a:hover{
-    color: white;
-}
-
-.procurar{
-    width: 400px;
-    float: right;
-    margin-left: 270px;
-    height: 70px;
-    
-    
-}
-.psq{
+.search input {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
   background-color: #333;
-  border: 1px solid #555;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  width: 250px;
-  font-size: 1rem;
+  color: #fff;
+}
+
+.search input::placeholder {
+  color: #aaa;
+}
+
+/* ======== MENU ======== */
+.menu {
+  background-color: #111;
+  padding: 10px 0;
+}
+
+.menu ul {
+  list-style: none;
   display: flex;
-    
-} 
-.botão{
-    width:100px;
-    height:37px;
-    background: rgb(92, 206, 92);
-    border: 2px solid black;
-    margin-top:13px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;  
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
-.psq:focus{
-     outline: none;
-     border-color: #4e8d06;
+.menu li {
+  margin: 0 15px;
 }
 
-.grid{
-    
-    align-items:center;
-    gap: 10px;
-    margin: 0px;
-    max-width: 200px;
-    display: flex;
-
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 
-.imagemprincipal{
-    padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+.menu a:hover {
+  color: #1e90ff;
 }
 
-.imagem{
-    display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.cartão-filme{
-    background-color: #2a2a2a;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+/* ======== FILME EM DESTAQUE ======== */
+.destaque {
   height: 400px;
+  background: url("destaque.jpg") no-repeat center center/cover;
   display: flex;
-  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
 }
 
-.cartão-filme:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+.conteudo-destaque {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
 }
 
-.cartão-filme img {
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #1e90ff;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #0d6efd;
+}
+
+/* ======== TOP 3 ======== */
+.top3 {
+  padding: 20px;
+}
+
+.grid-top3 {
+  display: flex;
+  gap: 20px;
+}
+
+.grid-top3 .card {
+  position: relative;
+  width: 200px;
+}
+
+.grid-top3 img {
   width: 100%;
-  height: 320px;
+  border-radius: 8px;
+}
+
+.posicao {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #1e90ff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* ======== FILMES E SÉRIES RECENTES ======== */
+.recentes {
+  padding: 20px;
+}
+
+.grid-recentes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+
+.grid-recentes img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
   object-fit: cover;
   object-position: center;
   border-radius: 8px 8px 0 0;
   display: block;
 }
+
