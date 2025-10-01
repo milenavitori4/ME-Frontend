@@ -1,51 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OxenteFlix</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OxenteFlix</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
 
-    <div class="grad">
+  <header class="topo">
+    <div class="logo">
+      OxenteFlix <span></span>
+    </div>
+     <nav class="menu">
+    <ul>
+      <li><a href="home">Home</a></li>
+      <li><a href="./OxenteFlix-main/TodosOsFilmes/filme.html">Filmes</a></li>
+      <li><a href="./OxenteFlix-main/series.html">Séries</a></li>
+    </ul>
+  </nav>
+  <div class="search">
+      <input type="text" placeholder="Procurar...">
+    </div>
+  </header>
 
-    <div class="grid">
-        <div class="menu">
-    <h1>OxenteFlix</h1>
-      <ul>
-    <li><a href="">Home</a></li>
-    <li><a href="./filme.html">Filmes</a></li>
-    <li><a href="">Séries</a></li>
-    <input class="psq" type="procurar"  placeholder="Procurar">
-        </ul>
+  <section id="destaque" class="destaque">
+    <div class="conteudo-destaque">
+      <h1>Bem vinfo a Quixeramobim</h1>
+      <p class="detalhes">2022 | 1h 46in | ★★★★☆</p>
+      <p class="sinopse">
+Aimée é herdeira de um milionário envolvido com corrupção. Influenciadora digital, seus bens são bloqueados pela Receita Federal. Forçada a ficar sem o dinheiro do pai, Aimée precisa se refugiar em uma fazenda em ruínas no interior do Ceará.
+      </p>
+      <a href="./OxenteFlix-main/" class="btn">Ver mais detalhes</a>
     </div>
-        
-    </div>
-    </div>
+  </section>
 
-<main class="imagemprincipal"></main>
-    <div class="imagem">
-        <div class="cartão-filme">
-    <img src="./imagem/quixeramobim.jpg" alt="">
-    <div class="info-filme">
-    <button>Assistir agora</button>
+  
+  <section id="top3" class="top3">
+    <h2>Top 3 Hoje</h2>
+    <div class="grid-top3">
+      <div class="card">
+        <span class="posicao">1</span>
+        <img src="./TodosOsFilmes/imagens.filme/filme1.webp" alt="Filme 1">
+        <p>Auto da compadecida</p>
+      </div>
+      <div class="card">
+        <span class="posicao">2</span>
+        <img src="./TodosOsFilmes/imagens.filme/filme2.jpeg" alt="Filme 2">
+        <p>Lisbela e o Prisioneiro</p>
+      </div>
+      <div class="card">
+        <span class="posicao">3</span>
+        <img src="./TodosOsFilmes/imagens.filme/filme5.jpg" alt="Filme 3">
+        <p>Bad Boys</p>
+      </div>
     </div>
-    </div>
-    </div>
+  </section>
 
-
-    <h4>Brasil: Top 3 em filmes hoje</h4>
-    <img src="./imagem/lisbela.jpg" alt="">
-    <img src="./imagem/auto da compadecida.jpg" alt="">
-    <img src="./imagem/o homem que desafiou.jpg" alt="">
-    <h4>Brasil: top 3 em séries hoje</h4>
-    <img src="./imagem/Se avexe não.jpg" alt="">
-    <img src="./imagem/download.jpg" alt="">
-    <img src="./imagem/Guerreiros do sol.jpg" alt="">
+  <!-- ======== FILMES RECENTES ======== -->
+  <section id="recentes-filmes" class="recentes">
+    <h2>Filmes Recentes</h2>
+    <div class="grid-recentes">
+      <div><img src="filme4.jpg" alt="Filme"><p>Nome Filme</p></div>
+      <div><img src="filme5.jpg" alt="Filme"><p>Nome Filme</p></div>
+      <div><img src="filme6.jpg" alt="Filme"><p>Nome Filme</p></div>
+      <div><img src="filme7.jpg" alt="Filme"><p>Nome Filme</p></div>
+      <div><img src="filme8.jpg" alt="Filme"><p>Nome Filme</p></div>
+      <div><img src="filme9.jpg" alt="Filme"><p>Nome Filme</p></div>
     </div>
+    <a href="todos-filmes.html" class="btn-link">Ver todos os filmes</a>
+  </section>
+
+  <!-- ======== SÉRIES RECENTES ======== -->
+  <section id="recentes-series" class="recentes">
+    <h2>Séries Recentes</h2>
+    <div class="grid-recentes">
+      <div><img src="serie1.jpg" alt="Série"><p>Nome Série</p></div>
+      <div><img src="serie2.jpg" alt="Série"><p>Nome Série</p></div>
+      <div><img src="serie3.jpg" alt="Série"><p>Nome Série</p></div>
+      <div><img src="serie4.jpg" alt="Série"><p>Nome Série</p></div>
+      <div><img src="serie5.jpg" alt="Série"><p>Nome Série</p></div>
+      <div><img src="serie6.jpg" alt="Série"><p>Nome Série</p></div>
+    </div>
+    <a href="todas-series.html" class="btn-link">Ver todas as séries</a>
+  </section>
+
+  <footer>
+    <p>© 2025 – Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
 
     
 </body>
 </html>
+
