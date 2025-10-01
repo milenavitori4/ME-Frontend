@@ -24,7 +24,7 @@ body {
 }
 
 .header h1 {
-  color: #e50914;
+  color: #4e8d06;
   font-size: 1.8rem;
 }
 
@@ -110,7 +110,7 @@ p strong {
 }
 
 .aviso {
-    color: #ff4d4d;
+    color: #4e8d06;
     font-size: 14px;
     margin: 10px 0;
 }
@@ -139,4 +139,12 @@ p strong {
     color: #777;
     margin-top: 10px;
     font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #4e8d06;
+    margin: 0;
+    font-size: 24px;
+    
 }
