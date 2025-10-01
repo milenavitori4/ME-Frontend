@@ -5,7 +5,7 @@ body {
   color: #fff;
 }
 
-/* ======== TOPO (LOGO + PESQUISA) ======== */
+
 .topo {
   display: flex;
   justify-content: space-between;
@@ -17,7 +17,7 @@ body {
 .logo {
   font-size: 22px;
   font-weight: bold;
-  color: #e50914; /* vermelho estilo Netflix */
+  color: #4e8d06; 
 }
 
 .logo span {
@@ -31,11 +31,11 @@ body {
   border: none;
   border-radius: 6px;
   background-color: #333;
-  color: #fff;
+  color: #4e8d06;
 }
 
 .search input::placeholder {
-  color: #aaa;
+  color: #4e8d06;
 }
 
 /* ======== MENU ======== */
@@ -161,10 +161,3 @@ footer {
   padding: 15px;
   margin-top: 20px;
 }
-
-  object-fit: cover;
-  object-position: center;
-  border-radius: 8px 8px 0 0;
-  display: block;
-}
-
